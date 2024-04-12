@@ -1,18 +1,15 @@
-public abstract class Plant extends MutualElements  {
+public abstract class Plant extends Mob  {
 
     private final int price;
     private int health;
-    private static long waitingTime;
-    private int row;
-    private int col;
+    private long waitingTime;
 
-    public Plant(int xCoordinate, int yCoordinate, int speed, int price, int health, long waitingTime, int row, int col){
+
+    public Plant(int xCoordinate, int yCoordinate, int speed, int price, int health, long waitingTime){
         super(xCoordinate, yCoordinate, speed);
         this.price = price;
         this.health = health;
         this.waitingTime = waitingTime;
-        this.row = row;
-        this.col = col;
     }
 
     public abstract void act();
@@ -32,15 +29,8 @@ public abstract class Plant extends MutualElements  {
         }
     }
 
-    public static long getWaitingTime(){
+    public long getWaitingTime(){
         return waitingTime;
     }
 
-    public int getRow(){
-        return row;
-    }
-
-    public int getCol(){
-        return col;
-    }
 }

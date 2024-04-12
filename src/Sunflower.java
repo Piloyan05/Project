@@ -1,7 +1,22 @@
-public class Sunflower extends Plant{
+public class Sunflower extends SunTokenProducer{
+    public Sunflower(int x, int y) {
+        super(x, y, 0, 50, 100, 5000, 10.0, 25);
 
-
-    public Sunflower(String name, int health, int attackPower) {
-        super(name, health, attackPower);
     }
+
+    @Override
+    public void act() {
+        long currentTime = System.currentTimeMillis();
+        double timeSinceLastToken = (currentTime - getLastTokenAdded()) / 1000.0;
+        if (timeSinceLastToken >= getTokenWaitingTime()) {
+            produceSunToken();
+            setLastTokenAdded(currentTime);
+        }
+    }
+
+    private void produceSunToken() {
+        SunToken sunToken = new SunToken(getxCoordinate(), getyCoordinate(), getSunProduction());
+        GameBoard.addSunToken(sunToken);
+    }
+
 }

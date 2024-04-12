@@ -1,7 +1,21 @@
-public class PeaShooter extends Plant{
+public class PeaShooter extends Shooter{
+
+    private static long lastAdded;
+    public PeaShooter(int x, int y) {
+        super(x, y, 0, 100, 100, 10, 25, 2);
+    }
 
 
-    public PeaShooter(String name, int health, int attackPower) {
-        super(name, health, attackPower);
+    @Override
+    public void act() {
+
+    }
+
+    public static long getLastAdded() {
+        return lastAdded;
+    }
+
+    public static void setLastAdded(long lastAdded) {
+        PeaShooter.lastAdded = lastAdded;
     }
 }

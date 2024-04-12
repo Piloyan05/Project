@@ -1,7 +1,19 @@
-public class WallNut extends Plant{
+public class WallNut extends Barrier{
 
 
-    public WallNut(String name, int health, int attackPower) {
-        super(name, health, attackPower);
+    private static long lastAdded;
+    public WallNut(int x, int y) {
+        super(x, y, 0, 50, 10);
+    }
+
+    @Override
+    public void act(){}
+
+    public static long getLastAdded() {
+        return lastAdded;
+    }
+
+    public static void setLastAdded(long lastAdded) {
+        WallNut.lastAdded = lastAdded;
     }
 }

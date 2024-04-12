@@ -1,4 +1,4 @@
-public abstract class Zombie extends MutualElements{
+public abstract class Zombie extends Mob{
 
     public String name;
     private int speed;
@@ -24,8 +24,8 @@ public abstract class Zombie extends MutualElements{
     public double getAttackWaitingTime() {
         return attackWaitingTime;
     }
-    public void set_attack_waiting_time(double val){
-        attackWaitingTime=val;
+    public void seAttackWaitingTime(double val){
+        attackWaitingTime = val;
     }
 
     public Zombie(int xCoordinate, int yCoordinate, int speed, int row, int col, int health){

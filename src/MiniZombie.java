@@ -1,6 +1,6 @@
 public class MiniZombie extends Zombie{
 
-    public MiniZombie(String name, int health, int attackPower) {
-        super(name, health, attackPower);
+    public MiniZombie(int xCoordinate, int yCoordinate, int speed, int row, int col, int health) {
+        super(xCoordinate, yCoordinate, speed, row, col, health);
     }
 }

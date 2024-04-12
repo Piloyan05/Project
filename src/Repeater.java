@@ -1,6 +1,17 @@
-public class Repeater extends Plant{
+public class Repeater extends Shooter{
 
-    public Repeater(String name, int health, int attackPower) {
-        super(name, health, attackPower);
+    private static long lastAdded;
+    public Repeater(int x, int y) {
+        super(x, y, 0, 100, 100, 10, 25, 1);
     }
+
+
+    @Override
+    public void act() {}
+
+    public static long getLastAdded() {
+        return lastAdded;
+    }
+
+    public static void setLastAdded(long lastAdded) {Repeater.lastAdded = lastAdded;}
 }

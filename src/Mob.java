@@ -1,11 +1,11 @@
-public abstract class MutualElements{
+public abstract class Mob{
 
     private int xCoordinate;
     private int yCoordinate;
     protected boolean isDead;
     private int speed;
 
-    public MutualElements(int xCoordinate, int yCoordinate, int speed){
+    public Mob(int xCoordinate, int yCoordinate, int speed){
         this.xCoordinate = xCoordinate;
         this.yCoordinate = yCoordinate;
         this.speed = speed;
