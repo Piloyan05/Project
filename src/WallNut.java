@@ -6,6 +6,7 @@ public class WallNut extends Barrier{
         super(x, y, 0, 50, 10);
     }
 
+
     @Override
     public void act(){}
 

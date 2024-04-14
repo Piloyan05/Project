@@ -64,9 +64,7 @@ public abstract class Zombie extends Mob{
         }
     }
     public void act() {
-        if(getxCoordinate() >limit){
-            setxCoordinate(speed);
-        }
+
     }
 
 

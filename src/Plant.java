@@ -2,7 +2,7 @@ public abstract class Plant extends Mob  {
 
     private final int price;
     private int health;
-    private long waitingTime;
+    private long waitingTime;//coolDownTime
 
 
     public Plant(int xCoordinate, int yCoordinate, int speed, int price, int health, long waitingTime){

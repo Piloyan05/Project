@@ -5,7 +5,6 @@ public class Repeater extends Shooter{
         super(x, y, 0, 100, 100, 10, 25, 1);
     }
 
-
     @Override
     public void act() {}
 
