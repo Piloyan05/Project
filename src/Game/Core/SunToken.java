@@ -1,4 +1,6 @@
-    public class SunToken extends Mob {
+package Game.Core;
+
+public class SunToken extends Mob {
         private double lastDropped;
         private int limit;
         private int value;

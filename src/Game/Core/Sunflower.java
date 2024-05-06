@@ -1,3 +1,6 @@
+package Game.Core;
+import Game.*;
+
 public class Sunflower extends SunTokenProducer{
     public Sunflower(int x, int y) {
         super(x, y, 0, 50, 100, 5000, 10.0, 25);
@@ -19,4 +22,8 @@ public class Sunflower extends SunTokenProducer{
         GameBoard.addSunToken(sunToken);
     }
 
+    @Override
+    public char getSymbol() {
+        return 'S';
+    }
 }

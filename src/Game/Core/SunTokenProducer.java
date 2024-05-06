@@ -1,3 +1,5 @@
+package Game.Core;
+
 public abstract class SunTokenProducer extends Plant{
     private final double tokenWaitingTime;
     private long lastTokenAdded;

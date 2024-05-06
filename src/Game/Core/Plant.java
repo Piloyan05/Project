@@ -1,7 +1,9 @@
+package Game.Core;
+
 public abstract class Plant extends Mob  {
 
     private final int price;
-    private int health;
+    private double health;
     private long waitingTime;//coolDownTime
 
 
@@ -18,7 +20,7 @@ public abstract class Plant extends Mob  {
         return price;
     }
 
-    public int getHealth(){
+    public double getHealth(){
         return health;
     }
 
@@ -28,9 +30,10 @@ public abstract class Plant extends Mob  {
             isDead = true;
         }
     }
-
+    public char getSymbol(){
+        return 'p';
+    }
     public long getWaitingTime(){
         return waitingTime;
     }
-
 }

@@ -1,10 +1,12 @@
+package Game.Core;
+
 public abstract class Zombie extends Mob{
 
     public String name;
-    private int speed;
+    private double speed;
     private int row;
     private int col;
-    private int health;
+    private double health;
     private int limit;
     private long lastAttack;
     private double attackWaitingTime;
@@ -41,7 +43,7 @@ public abstract class Zombie extends Mob{
     }
 
     @Override
-    public int getSpeed() {
+    public double getSpeed() {
         return speed;
     }
 
@@ -53,7 +55,7 @@ public abstract class Zombie extends Mob{
         return col;
     }
 
-    public int getHealth(){
+    public double getHealth(){
         return health;
     }
 
@@ -65,6 +67,10 @@ public abstract class Zombie extends Mob{
     }
     public void act() {
 
+    }
+
+    public char getSymbol() {
+        return 'z';
     }
 
 

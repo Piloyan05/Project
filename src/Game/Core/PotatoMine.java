@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+package Game.Core;
+
 import java.util.List;
 
 public class PotatoMine extends Shooter{
@@ -26,12 +27,17 @@ public class PotatoMine extends Shooter{
                 if (zombie.getRow() == mineRow) {
                     zombie.decreaseHealth(getDamage());
                     if (zombie.isDead()) {
-                        System.out.println("Zombie defeated!");
+                        System.out.println("Game.Core.Zombie defeated!");
                     }
                     this.setDead(true);
                 }
             }
 
         }
+    }
+
+    @Override
+    public char getSymbol() {
+        return 'P';
     }
 }

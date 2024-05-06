@@ -1,9 +1,11 @@
+package Game.Core;
+
 public abstract class Mob{
 
     private int xCoordinate;
     private int yCoordinate;
     protected boolean isDead;
-    private int speed;
+    private double speed;
 
     public Mob(int xCoordinate, int yCoordinate, int speed){
         this.xCoordinate = xCoordinate;
@@ -28,7 +30,7 @@ public abstract class Mob{
         this.isDead = isDead;
     }
 
-    public int getSpeed() {
+    public double getSpeed() {
         return speed;
     }
 
@@ -42,6 +44,8 @@ public abstract class Mob{
     public void setyCoordinate(int yCoordinate){
         this.yCoordinate += yCoordinate;
     }
+
+
 
     public abstract void act();
 

@@ -1,4 +1,6 @@
-public class BucketZombie extends Zombie{
+package Game.Core;
+
+public class BucketZombie extends Zombie {
 
 
     public BucketZombie(int xCoordinate, int yCoordinate, int speed, int row, int col, int health) {

@@ -1,3 +1,5 @@
+package Game.Core;
+
 public abstract class Shooter extends Plant{
     private final int damage;
     private final double bulletWaitingTime;

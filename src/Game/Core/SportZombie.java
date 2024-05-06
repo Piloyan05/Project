@@ -1,3 +1,5 @@
+package Game.Core;
+
 public class SportZombie extends Zombie{
 
 
