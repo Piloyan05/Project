@@ -4,9 +4,9 @@ import Game.Core.Zombie;
 
 public class ZombieSlowDown implements Buff {
     private Zombie z;
-    private double speed = (double)(z.getSpeed());
+    private double speed = (z.getSpeed());
 
-    public ZombieSlowDown(Zombie z, double speed) {
+    public ZombieSlowDown(Zombie z) {
         this.z = z;
     }
 

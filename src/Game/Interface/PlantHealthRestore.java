@@ -1,13 +1,12 @@
 package Game.Interface;
 
 import Game.Core.Plant;
-import Game.Interface.Buff;
 
 public class PlantHealthRestore implements Buff {
     private Plant p;
-    double health = (double)(p.getHealth());
+    double health = p.getHealth();
 
-    public PlantHealthRestore(Plant p, double health) {
+    public PlantHealthRestore(Plant p) {
         this.p = p;
     }
 
