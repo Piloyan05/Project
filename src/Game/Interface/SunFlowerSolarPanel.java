@@ -2,7 +2,7 @@ package Game.Interface;
 
 import Game.Core.SunTokenProducer;
 
-public class SunFlowerSolarPanel implements BuyableStuff {
+public class SunFlowerSolarPanel implements Buff {
     private double speed;
     private SunTokenProducer waitTime;
 

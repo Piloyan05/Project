@@ -1,9 +1,9 @@
 package Game.Interface;
 
 import Game.Core.Plant;
-import Game.Interface.BuyableStuff;
+import Game.Interface.Buff;
 
-public class PlantHealthRestore implements BuyableStuff {
+public class PlantHealthRestore implements Buff {
     private Plant p;
     double health = (double)(p.getHealth());
 
