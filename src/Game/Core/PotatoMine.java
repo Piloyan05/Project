@@ -1,5 +1,6 @@
 package Game.Core;
 
+import java.awt.Graphics;
 import java.util.List;
 
 public class PotatoMine extends Shooter{
@@ -39,5 +40,13 @@ public class PotatoMine extends Shooter{
     @Override
     public char getSymbol() {
         return 'P';
+    }
+    @Override
+    protected void add(Plant plant) {
+        throw new UnsupportedOperationException("Unimplemented method 'add'");
+    }
+    @Override
+    public void draw(Graphics g) {
+        throw new UnsupportedOperationException("Unimplemented method 'draw'");
     }
 }

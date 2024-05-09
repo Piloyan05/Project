@@ -3,11 +3,17 @@ package Game.Core;
 public abstract class Zombie extends Mob{
 
     public String name;
-    private double speed;
+
+    public double speed;
     private int row;
     private int col;
     private double health;
     private int limit;
+
+    public void setCol(int col) {
+        this.col = col;
+    }
+
     private long lastAttack;
     private double attackWaitingTime;
 
@@ -30,7 +36,7 @@ public abstract class Zombie extends Mob{
         attackWaitingTime = val;
     }
 
-    public Zombie(int xCoordinate, int yCoordinate, int speed, int row, int col, int health){
+    public Zombie(int xCoordinate, int yCoordinate, double speed, int row, int col, int health){
         super(xCoordinate, yCoordinate, speed);
         this.speed = speed;
         this.col = col;
@@ -54,6 +60,7 @@ public abstract class Zombie extends Mob{
     public int getCol(){
         return col;
     }
+
 
     public double getHealth(){
         return health;

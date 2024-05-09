@@ -1,9 +1,14 @@
 package Game.Core;
 
+import java.awt.Color;
+import java.awt.Graphics;
+
 public class WallNut extends Barrier {
 
 
     private static long lastAdded;
+    private int x;
+    private int y;
     public WallNut(int x, int y) {
         super(x, y, 0, 50, 10);
     }
@@ -30,4 +35,16 @@ public class WallNut extends Barrier {
     public char getSymbol() {
         return 'W';
     }
+
+    @Override
+    public void draw(Graphics g) {
+        g.setColor(Color.YELLOW);
+        g.fillRect(x, y, 20, 20); // Simple representation for demonstration
+    }
+
+
+    @Override
+    protected void add(Plant plant) {
+    }
+
 }

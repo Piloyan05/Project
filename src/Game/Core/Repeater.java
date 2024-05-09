@@ -3,6 +3,7 @@ package Game.Core;
 import Game.GameBoard;
 //import Game.UI.BoardSquare;
 
+import java.awt.Graphics;
 import java.util.List;
 
 public class Repeater extends Shooter{
@@ -50,5 +51,15 @@ public class Repeater extends Shooter{
 
     public static void setLastAdded(long lastAdded) {
         Repeater.lastAdded = lastAdded;
+    }
+
+    @Override
+    protected void add(Plant plant) {
+        throw new UnsupportedOperationException("Unimplemented method 'add'");
+    }
+
+    @Override
+    public void draw(Graphics g) {
+        throw new UnsupportedOperationException("Unimplemented method 'draw'");
     }
 }

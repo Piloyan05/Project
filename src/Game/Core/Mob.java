@@ -7,7 +7,7 @@ public abstract class Mob{
     protected boolean isDead;
     private double speed;
 
-    public Mob(int xCoordinate, int yCoordinate, int speed){
+    public Mob(int xCoordinate, int yCoordinate, double speed){
         this.xCoordinate = xCoordinate;
         this.yCoordinate = yCoordinate;
         this.speed = speed;

@@ -27,7 +27,6 @@ public class GameBoard {
     }
 
 
-
     private void initializeBoard() {
         for (int i = 0; i < BOARD_HEIGHT; i++) {
             for (int j = 0; j < BOARD_WIDTH; j++) {
@@ -45,6 +44,7 @@ public class GameBoard {
         zombies.add(zombie);
         board[row][col] = zombie.getSymbol();
     }
+
     public void displayBoard() {
         for (int i = 0; i < BOARD_HEIGHT; i++) {
             for (int j = 0; j < BOARD_WIDTH; j++) {
@@ -58,5 +58,5 @@ public class GameBoard {
         // Implementation to add sun tokens to the game board
     }
 
-    // Other methods for updating and interacting with the game board
+
 }

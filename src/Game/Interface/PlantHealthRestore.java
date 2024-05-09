@@ -2,7 +2,7 @@ package Game.Interface;
 
 import Game.Core.Plant;
 
-public class PlantHealthRestore implements Buff {
+public class PlantHealthRestore implements Buff  {
     private Plant p;
     double health = p.getHealth();
 
