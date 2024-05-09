@@ -4,8 +4,7 @@ import java.util.List;
 
 public class MiniZombie extends Zombie {
 
-    private final int MINI_ZOMBIE_DAMAGE = 10; // Damage dealt by MiniZombie
-    private final int MINI_ZOMBIE_SPEED = 2;   // Speed of MiniZombie
+    private final int MINI_ZOMBIE_DAMAGE = 10;
 
     public MiniZombie(int xCoordinate, int yCoordinate, int row, int col, int health) {
         super(xCoordinate, yCoordinate,2, row, col, health);

@@ -22,9 +22,9 @@ public class BoardPanel extends JPanel {
     private final int cellHeight;
 
     public BoardPanel() {
-        setBackground(Color.WHITE);  // Set background to white for better visibility of the grid
-        this.cellWidth = getWidth() / numCols;  // Calculate cell width based on the panel's width
-        this.cellHeight = getHeight() / numRows;  // Calculate cell height based on the panel's height
+        setBackground(Color.WHITE);
+        this.cellWidth = getWidth() / numCols;
+        this.cellHeight = getHeight() / numRows;
 
         addMouseListener(new MouseAdapter() {
             @Override
@@ -90,7 +90,7 @@ public class BoardPanel extends JPanel {
     private boolean isPositionAvailable(int x, int y) {
         for (Plant plant : plants) {
             if (Math.abs(plant.getX() - x) < 10 && Math.abs(plant.getY() - y) < 10) {
-                return false; // This checks if the new plant is too close to existing plants
+                return false;
             }
         }
         return true;

@@ -39,7 +39,7 @@ public class WallNut extends Barrier {
     @Override
     public void draw(Graphics g) {
         g.setColor(Color.YELLOW);
-        g.fillRect(x, y, 20, 20); // Simple representation for demonstration
+        g.fillRect(x, y, 20, 20);
     }
 
 
