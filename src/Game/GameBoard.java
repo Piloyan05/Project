@@ -53,10 +53,4 @@ public class GameBoard {
             System.out.println();
         }
     }
-
-    public static void addSunToken(SunToken sunToken) {
-        // Implementation to add sun tokens to the game board
-    }
-
-
 }
